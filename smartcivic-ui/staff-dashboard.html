@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartCivic — Staff Home</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap">
+<link rel="stylesheet" href="ui.css">
+<style>body{margin:0}</style>
+</head>
+<body>
+<div class="pg dark" style="width:100%"><div class="sbw"><aside class="side"><a class="logo" href="staff-dashboard.html" style="text-decoration:none">SmartCivic</a><p style="margin-bottom:10px">Staff portal · Ward Office</p><a href="staff-dashboard.html" class="on">Dashboard</a><a href="staff-complaints.html">Complaint Management</a><a href="staff-announcements.html">Announcements</a><a href="staff-profile.html">Profile</a></aside><div><header class="nav"><input class="f" style="max-width:380px" placeholder="Search complaints or IDs" aria-label="Search"><span class="sp"></span><select class="f" style="width:112px" aria-label="Language"><option>English</option><option>हिन्दी</option><option>ਪੰਜਾਬੀ</option></select><button class="b s" data-theme-toggle>Theme</button><button class="b s">Alerts <span class="bd rev">3</span></button><span class="av" role="img" aria-label="Profile: Ravinder Kaur">RK</span></header><div class="w"><div><h1>Good morning, Ravinder</h1><p>You have 7 new complaints to review.</p></div><div class="g5"><div class="c"><p>Total</p><span class="n">248</span></div><div class="c"><p>New</p><span class="n">7</span></div><div class="c"><p>Pending</p><span class="n">31</span></div><div class="c"><p>In Progress</p><span class="n">54</span></div><div class="c"><p>Resolved</p><span class="n">156</span></div></div><div class="g3"><div class="c"><h3>By category</h3><div class="hb"><span>Water</span><i style="width:90%"></i><b>62</b></div><div class="hb"><span>Roads</span><i style="width:80%"></i><b>55</b></div><div class="hb"><span>Electricity</span><i style="width:60%"></i><b>41</b></div><div class="hb"><span>Sanitation</span><i style="width:55%"></i><b>38</b></div></div><div class="c"><h3>Status distribution</h3><div class="hb"><span>Resolved</span><i style="width:100%"></i><b>156</b></div><div class="hb"><span>In Progress</span><i style="width:35%"></i><b>54</b></div><div class="hb"><span>Pending</span><i style="width:20%"></i><b>31</b></div><div class="hb"><span>Rejected</span><i style="width:5%"></i><b>7</b></div></div><div class="c"><h3>Trend (6 months)</h3><svg viewBox="0 0 200 90" role="img" aria-label="Complaints rising from 30 to 62 per month"><polyline points="5,75 45,60 85,65 125,40 165,30 195,15" fill="none" stroke="#8FB3C4" stroke-width="3"/></svg></div></div><div class="cols"><div class="c"><h3>Recent complaints</h3><table><tr><th>ID</th><th>Title</th><th>Priority</th><th>Status</th></tr><tr><td>SC-00418</td><td>Broken bench</td><td>Low</td><td><span class="bd sub">Submitted</span></td></tr><tr><td>SC-00417</td><td>Burst pipe, Block C</td><td>High</td><td><span class="bd rev">Under Review</span></td></tr><tr><td>SC-00412</td><td>Streetlight</td><td>Medium</td><td><span class="bd prg">In Progress</span></td></tr></table></div><div class="c"><h3>Priority overview</h3><p>High 9 · Medium 34 · Low 42</p><h3>Quick actions</h3><a class="b" href="#">Review New</a><a class="b s" href="#">Post Announcement</a></div></div></div></div></div></div>
+<script>
+(function(){var p=document.querySelector('.pg'),k='sc-theme',s=null;try{s=localStorage.getItem(k)}catch(e){}
+if(s)p.classList.toggle('dark',s==='dark');
+document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var d=p.classList.toggle('dark');try{localStorage.setItem(k,d?'dark':'light')}catch(e){}})});
+document.querySelectorAll('select[aria-label="Language"]').forEach(function(x){x.addEventListener('change',function(){document.documentElement.lang=['en','hi','pa'][x.selectedIndex]})});
+})();
+</script>
+</body>
+</html>
