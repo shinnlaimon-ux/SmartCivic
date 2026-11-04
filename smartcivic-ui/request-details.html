@@ -1,21 +1,140 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SmartCivic — Request Details</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap">
-<link rel="stylesheet" href="ui.css">
-<style>body{margin:0}</style>
-</head>
-<body>
-<div class="pg " style="width:100%"><header class="nav"><a class="logo" href="index.html" style="text-decoration:none">SmartCivic</a><nav class="nl" aria-label="Main"><a href="index.html">Home</a><a href="register-complaint.html">Register Complaint</a><a href="my-complaints.html" class="on">My Complaints</a><a href="faq.html">FAQ</a><a href="announcements.html">Announcements</a><a href="profile.html">Profile</a></nav><span class="sp"></span><select class="f" style="width:112px" aria-label="Language"><option>English</option><option>हिन्दी</option><option>ਪੰਜਾਬੀ</option></select><button class="b s" data-theme-toggle>Theme</button><button class="b s">Alerts <span class="bd rev">3</span></button><span class="av" role="img" aria-label="Profile: Gurpreet Singh">GS</span></header><div class="w"><div class="row"><div><p>SC-2026-00412</p><h1>Streetlight not working</h1></div><span class="bd prg">In Progress</span></div><div class="cols"><div style="display:grid;gap:16px"><div class="c"><p>Electricity · Submitted 12 Oct 2026 · Model Town, Ludhiana</p><p style="color:var(--tx)">Light near the park gate has been off for a week. The road is unsafe after dark.</p><div class="row" style="justify-content:flex-start"><span class="chip">light.jpg</span><span class="chip">bill.pdf</span></div></div><div class="c bg"><h3>Staff response</h3><p>Technician visit booked for 6 Nov. We will update you after repair.</p><div class="row" style="justify-content:flex-start"><button class="b s">Add Information</button><button class="b s">Reopen</button><button class="b">Download Receipt</button></div></div></div><div style="display:grid;gap:16px;align-content:start"><div class="c"><h3>Progress</h3><div class="tl"><div><b>Submitted</b><p>12 Oct, 10:14</p></div><div><b>Under Review</b><p>13 Oct, 09:30 · Verified location</p></div><div><b>Assigned to Department</b><p>15 Oct · Electrical Dept.</p></div><div><b>Work in Progress</b><p>2 Nov · Technician booked</p></div><div><b>Resolved</b><p>Pending</p></div></div></div><div class="c bg"><h3>Assigned officer</h3><p>Ravinder Kaur · Electrical Department</p></div></div></div></div></div>
-<script>
-(function(){var p=document.querySelector('.pg'),k='sc-theme',s=null;try{s=localStorage.getItem(k)}catch(e){}
-if(s)p.classList.toggle('dark',s==='dark');
-document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var d=p.classList.toggle('dark');try{localStorage.setItem(k,d?'dark':'light')}catch(e){}})});
-document.querySelectorAll('select[aria-label="Language"]').forEach(function(x){x.addEventListener('change',function(){document.documentElement.lang=['en','hi','pa'][x.selectedIndex]})});
-})();
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartCivic — Request Details</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="ui.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pg" style="width: 100%">
+      <header class="nav">
+        <a class="logo" href="index.html" style="text-decoration: none"
+          >SmartCivic</a
+        >
+        <nav class="nl" aria-label="Main">
+          <a href="index.html">Home</a
+          ><a href="register-complaint.html">Register Complaint</a
+          ><a href="my-complaints.html" class="on">My Complaints</a
+          ><a href="faq.html">FAQ</a
+          ><a href="announcements.html">Announcements</a
+          ><a href="profile.html">Profile</a>
+        </nav>
+        <span class="sp"></span
+        ><select class="f" style="width: 112px" aria-label="Language">
+          <option>English</option>
+          <option>हिन्दी</option>
+          <option>ਪੰਜਾਬੀ</option></select
+        ><button class="b s" data-theme-toggle>Theme</button
+        ><button class="b s">Alerts <span class="bd rev">3</span></button
+        ><span class="av" role="img" aria-label="Profile: Gurpreet Singh"
+          >GS</span
+        >
+      </header>
+      <div class="w">
+        <div class="row">
+          <div>
+            <p>SC-2026-00412</p>
+            <h1>Streetlight not working</h1>
+          </div>
+          <span class="bd prg">In Progress</span>
+        </div>
+        <div class="cols">
+          <div style="display: grid; gap: 16px">
+            <div class="c">
+              <p>Electricity · Submitted 12 Oct 2026 · Model Town, Ludhiana</p>
+              <p style="color: var(--tx)">
+                Light near the park gate has been off for a week. The road is
+                unsafe after dark.
+              </p>
+              <div class="row" style="justify-content: flex-start">
+                <span class="chip">light.jpg</span
+                ><span class="chip">bill.pdf</span>
+              </div>
+            </div>
+            <div class="c bg">
+              <h3>Staff response</h3>
+              <p>
+                Technician visit booked for 6 Nov. We will update you after
+                repair.
+              </p>
+              <div class="row" style="justify-content: flex-start">
+                <button class="b s">Add Information</button
+                ><button class="b s">Reopen</button
+                ><button class="b">Download Receipt</button>
+              </div>
+            </div>
+          </div>
+          <div style="display: grid; gap: 16px; align-content: start">
+            <div class="c">
+              <h3>Progress</h3>
+              <div class="tl">
+                <div>
+                  <b>Submitted</b>
+                  <p>12 Oct, 10:14</p>
+                </div>
+                <div>
+                  <b>Under Review</b>
+                  <p>13 Oct, 09:30 · Verified location</p>
+                </div>
+                <div>
+                  <b>Assigned to Department</b>
+                  <p>15 Oct · Electrical Dept.</p>
+                </div>
+                <div>
+                  <b>Work in Progress</b>
+                  <p>2 Nov · Technician booked</p>
+                </div>
+                <div>
+                  <b>Resolved</b>
+                  <p>Pending</p>
+                </div>
+              </div>
+            </div>
+            <div class="c bg">
+              <h3>Assigned officer</h3>
+              <p>Ravinder Kaur · Electrical Department</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var p = document.querySelector(".pg"),
+          k = "sc-theme",
+          s = null;
+        try {
+          s = localStorage.getItem(k);
+        } catch (e) {}
+        if (s) p.classList.toggle("dark", s === "dark");
+        document.querySelectorAll("[data-theme-toggle]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = p.classList.toggle("dark");
+            try {
+              localStorage.setItem(k, d ? "dark" : "light");
+            } catch (e) {}
+          });
+        });
+        document
+          .querySelectorAll('select[aria-label="Language"]')
+          .forEach(function (x) {
+            x.addEventListener("change", function () {
+              document.documentElement.lang = ["en", "hi", "pa"][
+                x.selectedIndex
+              ];
+            });
+          });
+      })();
+    </script>
+  </body>
 </html>

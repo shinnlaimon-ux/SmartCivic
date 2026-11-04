@@ -1,21 +1,116 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SmartCivic — FAQ</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap">
-<link rel="stylesheet" href="ui.css">
-<style>body{margin:0}</style>
-</head>
-<body>
-<div class="pg " style="width:100%"><header class="nav"><a class="logo" href="index.html" style="text-decoration:none">SmartCivic</a><nav class="nl" aria-label="Main"><a href="index.html">Home</a><a href="register-complaint.html">Register Complaint</a><a href="my-complaints.html">My Complaints</a><a href="faq.html" class="on">FAQ</a><a href="announcements.html">Announcements</a><a href="profile.html">Profile</a></nav><span class="sp"></span><select class="f" style="width:112px" aria-label="Language"><option>English</option><option>हिन्दी</option><option>ਪੰਜਾਬੀ</option></select><button class="b s" data-theme-toggle>Theme</button><button class="b s">Alerts <span class="bd rev">3</span></button><span class="av" role="img" aria-label="Profile: Gurpreet Singh">GS</span></header><div class="w"><h1>Frequently Asked Questions</h1><div class="c"><label for="q">Ask a question</label><input id="q" class="f" value="How do I know if my complaint was seen?"><div class="row" style="justify-content:flex-start"><span class="chip on">All</span><span class="chip">Complaint Registration</span><span class="chip">Complaint Tracking</span><span class="chip">Account and Profile</span><span class="chip">Government Services</span><span class="chip">General Information</span></div></div><details open><summary>How can I track my complaint?</summary><p style="margin:8px 0">Open My Complaints, then choose View Details. The timeline shows each step and staff remarks.</p><div class="row" style="justify-content:flex-start"><span>Was this helpful?</span><button class="b s">Helpful</button><button class="b s">Not helpful</button></div></details><details><summary>How long does a complaint take?</summary></details><details><summary>How do I change my language?</summary></details><div class="c bg"><h3>No answer found?</h3><p>We could not find a match. You can report the problem or talk to staff.</p><div class="row" style="justify-content:flex-start"><a class="b" href="#">Register a Complaint</a><a class="b s" href="#">Contact Support</a></div></div></div></div>
-<script>
-(function(){var p=document.querySelector('.pg'),k='sc-theme',s=null;try{s=localStorage.getItem(k)}catch(e){}
-if(s)p.classList.toggle('dark',s==='dark');
-document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var d=p.classList.toggle('dark');try{localStorage.setItem(k,d?'dark':'light')}catch(e){}})});
-document.querySelectorAll('select[aria-label="Language"]').forEach(function(x){x.addEventListener('change',function(){document.documentElement.lang=['en','hi','pa'][x.selectedIndex]})});
-})();
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartCivic — FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="ui.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pg" style="width: 100%">
+      <header class="nav">
+        <a class="logo" href="index.html" style="text-decoration: none"
+          >SmartCivic</a
+        >
+        <nav class="nl" aria-label="Main">
+          <a href="index.html">Home</a
+          ><a href="register-complaint.html">Register Complaint</a
+          ><a href="my-complaints.html">My Complaints</a
+          ><a href="faq.html" class="on">FAQ</a
+          ><a href="announcements.html">Announcements</a
+          ><a href="profile.html">Profile</a>
+        </nav>
+        <span class="sp"></span
+        ><select class="f" style="width: 112px" aria-label="Language">
+          <option>English</option>
+          <option>हिन्दी</option>
+          <option>ਪੰਜਾਬੀ</option></select
+        ><button class="b s" data-theme-toggle>Theme</button
+        ><button class="b s">Alerts <span class="bd rev">3</span></button
+        ><span class="av" role="img" aria-label="Profile: Gurpreet Singh"
+          >GS</span
+        >
+      </header>
+      <div class="w">
+        <h1>Frequently Asked Questions</h1>
+        <div class="c">
+          <label for="q">Ask a question</label
+          ><input
+            id="q"
+            class="f"
+            value="How do I know if my complaint was seen?"
+          />
+          <div class="row" style="justify-content: flex-start">
+            <span class="chip on">All</span
+            ><span class="chip">Complaint Registration</span
+            ><span class="chip">Complaint Tracking</span
+            ><span class="chip">Account and Profile</span
+            ><span class="chip">Government Services</span
+            ><span class="chip">General Information</span>
+          </div>
+        </div>
+        <details open>
+          <summary>How can I track my complaint?</summary>
+          <p style="margin: 8px 0">
+            Open My Complaints, then choose View Details. The timeline shows
+            each step and staff remarks.
+          </p>
+          <div class="row" style="justify-content: flex-start">
+            <span>Was this helpful?</span><button class="b s">Helpful</button
+            ><button class="b s">Not helpful</button>
+          </div>
+        </details>
+        <details><summary>How long does a complaint take?</summary></details>
+        <details><summary>How do I change my language?</summary></details>
+        <div class="c bg">
+          <h3>No answer found?</h3>
+          <p>
+            We could not find a match. You can report the problem or talk to
+            staff.
+          </p>
+          <div class="row" style="justify-content: flex-start">
+            <a class="b" href="#">Register a Complaint</a
+            ><a class="b s" href="#">Contact Support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var p = document.querySelector(".pg"),
+          k = "sc-theme",
+          s = null;
+        try {
+          s = localStorage.getItem(k);
+        } catch (e) {}
+        if (s) p.classList.toggle("dark", s === "dark");
+        document.querySelectorAll("[data-theme-toggle]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = p.classList.toggle("dark");
+            try {
+              localStorage.setItem(k, d ? "dark" : "light");
+            } catch (e) {}
+          });
+        });
+        document
+          .querySelectorAll('select[aria-label="Language"]')
+          .forEach(function (x) {
+            x.addEventListener("change", function () {
+              document.documentElement.lang = ["en", "hi", "pa"][
+                x.selectedIndex
+              ];
+            });
+          });
+      })();
+    </script>
+  </body>
 </html>

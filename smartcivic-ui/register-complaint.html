@@ -1,21 +1,161 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SmartCivic — Complaint Registration</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap">
-<link rel="stylesheet" href="ui.css">
-<style>body{margin:0}</style>
-</head>
-<body>
-<div class="pg " style="width:100%"><header class="nav"><a class="logo" href="index.html" style="text-decoration:none">SmartCivic</a><nav class="nl" aria-label="Main"><a href="index.html">Home</a><a href="register-complaint.html" class="on">Register Complaint</a><a href="my-complaints.html">My Complaints</a><a href="faq.html">FAQ</a><a href="announcements.html">Announcements</a><a href="profile.html">Profile</a></nav><span class="sp"></span><select class="f" style="width:112px" aria-label="Language"><option>English</option><option>हिन्दी</option><option>ਪੰਜਾਬੀ</option></select><button class="b s" data-theme-toggle>Theme</button><button class="b s">Alerts <span class="bd rev">3</span></button><span class="av" role="img" aria-label="Profile: Gurpreet Singh">GS</span></header><div class="w"><div><h1>Register a Complaint</h1><p>Fields marked * are required. It takes about 3 minutes.</p></div><div class="cols"><div class="c"><div><label>Complaint Title *</label><input class="f" value="" placeholder="e.g. Broken streetlight on Model Town road"></div><div><label>Complaint Category *</label><select class="f"><option>Roads and Infrastructure</option><option>Water Supply</option><option>Electricity</option><option>Sanitation and Waste Management</option><option>Public Safety</option><option>Healthcare</option><option>Education</option><option>Other</option></select></div><div><label>Complaint Description *</label><textarea class="f" rows="4">Light has been off for a week near the park gate.</textarea><p style="text-align:right">52 / 500</p></div><div><label>Location / Address *</label><input class="f" aria-invalid="true"><span class="err">Please add the location so staff can find it.</span></div><div class="drop"><b>Upload images or documents</b><p>JPG, PNG or PDF, up to 10 MB each</p><div class="row" style="justify-content:center;margin-top:8px"><span class="chip">light.jpg · 1.2 MB · Remove</span><span class="chip">bill.pdf · 340 KB · Remove</span></div></div><div class="g2"><div><label>Preferred Language</label><select class="f"><option>English</option><option>हिन्दी</option><option>ਪੰਜਾਬੀ</option></select></div><div><label>Phone or Email *</label><input class="f" value="+91 98xxx xxxxx" placeholder=""></div></div><div class="row"><button class="b s">Save Draft</button><button class="b">Submit Complaint</button></div></div><div style="display:grid;gap:16px;align-content:start"><div class="c bg"><h3>Confirm submission?</h3><p>You will get a complaint ID. You cannot edit the category later.</p><div class="row"><button class="b s">Go back</button><button class="b">Yes, submit</button></div></div><div class="c" role="status"><h3>Complaint submitted</h3><span class="n">SC-2026-00418</span><p>Keep this ID to track progress.</p><a class="b" href="#">Track this Complaint</a></div></div></div></div></div>
-<script>
-(function(){var p=document.querySelector('.pg'),k='sc-theme',s=null;try{s=localStorage.getItem(k)}catch(e){}
-if(s)p.classList.toggle('dark',s==='dark');
-document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var d=p.classList.toggle('dark');try{localStorage.setItem(k,d?'dark':'light')}catch(e){}})});
-document.querySelectorAll('select[aria-label="Language"]').forEach(function(x){x.addEventListener('change',function(){document.documentElement.lang=['en','hi','pa'][x.selectedIndex]})});
-})();
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartCivic — Complaint Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="ui.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pg" style="width: 100%">
+      <header class="nav">
+        <a class="logo" href="index.html" style="text-decoration: none"
+          >SmartCivic</a
+        >
+        <nav class="nl" aria-label="Main">
+          <a href="index.html">Home</a
+          ><a href="register-complaint.html" class="on">Register Complaint</a
+          ><a href="my-complaints.html">My Complaints</a
+          ><a href="faq.html">FAQ</a
+          ><a href="announcements.html">Announcements</a
+          ><a href="profile.html">Profile</a>
+        </nav>
+        <span class="sp"></span
+        ><select class="f" style="width: 112px" aria-label="Language">
+          <option>English</option>
+          <option>हिन्दी</option>
+          <option>ਪੰਜਾਬੀ</option></select
+        ><button class="b s" data-theme-toggle>Theme</button
+        ><button class="b s">Alerts <span class="bd rev">3</span></button
+        ><span class="av" role="img" aria-label="Profile: Gurpreet Singh"
+          >GS</span
+        >
+      </header>
+      <div class="w">
+        <div>
+          <h1>Register a Complaint</h1>
+          <p>Fields marked * are required. It takes about 3 minutes.</p>
+        </div>
+        <div class="cols">
+          <div class="c">
+            <div>
+              <label>Complaint Title *</label
+              ><input
+                class="f"
+                value=""
+                placeholder="e.g. Broken streetlight on Model Town road"
+              />
+            </div>
+            <div>
+              <label>Complaint Category *</label
+              ><select class="f">
+                <option>Roads and Infrastructure</option>
+                <option>Water Supply</option>
+                <option>Electricity</option>
+                <option>Sanitation and Waste Management</option>
+                <option>Public Safety</option>
+                <option>Healthcare</option>
+                <option>Education</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label>Complaint Description *</label
+              ><textarea class="f" rows="4">
+Light has been off for a week near the park gate.</textarea
+              >
+              <p style="text-align: right">52 / 500</p>
+            </div>
+            <div>
+              <label>Location / Address *</label
+              ><input class="f" aria-invalid="true" /><span class="err"
+                >Please add the location so staff can find it.</span
+              >
+            </div>
+            <div class="drop">
+              <b>Upload images or documents</b>
+              <p>JPG, PNG or PDF, up to 10 MB each</p>
+              <div class="row" style="justify-content: center; margin-top: 8px">
+                <span class="chip">light.jpg · 1.2 MB · Remove</span
+                ><span class="chip">bill.pdf · 340 KB · Remove</span>
+              </div>
+            </div>
+            <div class="g2">
+              <div>
+                <label>Preferred Language</label
+                ><select class="f">
+                  <option>English</option>
+                  <option>हिन्दी</option>
+                  <option>ਪੰਜਾਬੀ</option>
+                </select>
+              </div>
+              <div>
+                <label>Phone or Email *</label
+                ><input class="f" value="+91 98xxx xxxxx" placeholder="" />
+              </div>
+            </div>
+            <div class="row">
+              <button class="b s">Save Draft</button
+              ><button class="b">Submit Complaint</button>
+            </div>
+          </div>
+          <div style="display: grid; gap: 16px; align-content: start">
+            <div class="c bg">
+              <h3>Confirm submission?</h3>
+              <p>
+                You will get a complaint ID. You cannot edit the category later.
+              </p>
+              <div class="row">
+                <button class="b s">Go back</button
+                ><button class="b">Yes, submit</button>
+              </div>
+            </div>
+            <div class="c" role="status">
+              <h3>Complaint submitted</h3>
+              <span class="n">SC-2026-00418</span>
+              <p>Keep this ID to track progress.</p>
+              <a class="b" href="#">Track this Complaint</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var p = document.querySelector(".pg"),
+          k = "sc-theme",
+          s = null;
+        try {
+          s = localStorage.getItem(k);
+        } catch (e) {}
+        if (s) p.classList.toggle("dark", s === "dark");
+        document.querySelectorAll("[data-theme-toggle]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = p.classList.toggle("dark");
+            try {
+              localStorage.setItem(k, d ? "dark" : "light");
+            } catch (e) {}
+          });
+        });
+        document
+          .querySelectorAll('select[aria-label="Language"]')
+          .forEach(function (x) {
+            x.addEventListener("change", function () {
+              document.documentElement.lang = ["en", "hi", "pa"][
+                x.selectedIndex
+              ];
+            });
+          });
+      })();
+    </script>
+  </body>
 </html>

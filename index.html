@@ -1,21 +1,153 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SmartCivic — Citizen Home</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap">
-<link rel="stylesheet" href="ui.css">
-<style>body{margin:0}</style>
-</head>
-<body>
-<div class="pg " style="width:100%"><header class="nav"><a class="logo" href="index.html" style="text-decoration:none">SmartCivic</a><nav class="nl" aria-label="Main"><a href="index.html" class="on">Home</a><a href="register-complaint.html">Register Complaint</a><a href="my-complaints.html">My Complaints</a><a href="faq.html">FAQ</a><a href="announcements.html">Announcements</a><a href="profile.html">Profile</a></nav><span class="sp"></span><select class="f" style="width:112px" aria-label="Language"><option>English</option><option>हिन्दी</option><option>ਪੰਜਾਬੀ</option></select><button class="b s" data-theme-toggle>Theme</button><button class="b s">Alerts <span class="bd rev">3</span></button><span class="av" role="img" aria-label="Profile: Gurpreet Singh">GS</span></header><div class="w"><div class="hero"><h1>Welcome, Gurpreet</h1><p>Report a civic problem, follow its progress and read ward updates, in English, हिन्दी or ਪੰਜਾਬੀ.</p><a class="b" style="background:#C8D9E6;color:#2F4156;border-color:#C8D9E6" href="#">Register a Complaint</a></div><div class="g4"><a class="c" href="#"><h3>Register a Complaint</h3><p>Start a new report</p></a><a class="c" href="#"><h3>Track My Complaint</h3><p>See latest status</p></a><a class="c" href="#"><h3>View FAQs</h3><p>Quick answers</p></a><a class="c" href="#"><h3>View Announcements</h3><p>Ward news</p></a></div><div class="g4"><div class="c bg"><p>Total Complaints</p><span class="n">12</span></div><div class="c bg"><p>Pending</p><span class="n">3</span></div><div class="c bg"><p>In Progress</p><span class="n">4</span></div><div class="c bg"><p>Resolved</p><span class="n">5</span></div></div><div class="cols"><div class="c"><h2>Recent complaints</h2><div class="row"><span><b>SC-2026-00412</b> Streetlight not working</span><span class="bd prg">In Progress</span></div><div class="row"><span><b>SC-2026-00397</b> No water supply, Block C</span><span class="bd rev">Under Review</span></div><div class="row"><span><b>SC-2026-00371</b> Garbage not collected</span><span class="bd res">Resolved</span></div></div><div class="c"><h2>FAQ shortcuts</h2><a href="#" style="color:var(--tx)">How do I track my complaint?</a><a href="#" style="color:var(--tx)">Property tax payment steps</a><a href="#" style="color:var(--tx)">Apply for a birth certificate</a><h2 style="margin-top:8px">Latest news</h2><p>Water supply timings change from 10 Nov · Public Works</p></div></div></div><nav class="bn" aria-label="Mobile"><a href="index.html">Home</a><a href="#">Register</a><a href="#">Complaints</a><a href="faq.html">FAQ</a><a href="#">News</a><a href="profile.html">Profile</a></nav></div>
-<script>
-(function(){var p=document.querySelector('.pg'),k='sc-theme',s=null;try{s=localStorage.getItem(k)}catch(e){}
-if(s)p.classList.toggle('dark',s==='dark');
-document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var d=p.classList.toggle('dark');try{localStorage.setItem(k,d?'dark':'light')}catch(e){}})});
-document.querySelectorAll('select[aria-label="Language"]').forEach(function(x){x.addEventListener('change',function(){document.documentElement.lang=['en','hi','pa'][x.selectedIndex]})});
-})();
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartCivic — Citizen Home</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="ui.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pg" style="width: 100%">
+      <header class="nav">
+        <a class="logo" href="index.html" style="text-decoration: none"
+          >SmartCivic</a
+        >
+        <nav class="nl" aria-label="Main">
+          <a href="index.html" class="on">Home</a
+          ><a href="register-complaint.html">Register Complaint</a
+          ><a href="my-complaints.html">My Complaints</a
+          ><a href="faq.html">FAQ</a
+          ><a href="announcements.html">Announcements</a
+          ><a href="profile.html">Profile</a>
+        </nav>
+        <span class="sp"></span
+        ><select class="f" style="width: 112px" aria-label="Language">
+          <option>English</option>
+          <option>हिन्दी</option>
+          <option>ਪੰਜਾਬੀ</option></select
+        ><button class="b s" data-theme-toggle>Theme</button
+        ><button class="b s">Alerts <span class="bd rev">3</span></button
+        ><span class="av" role="img" aria-label="Profile: Gurpreet Singh"
+          >GS</span
+        >
+      </header>
+      <div class="w">
+        <div class="hero">
+          <h1>Welcome, Gurpreet</h1>
+          <p>
+            Report a civic problem, follow its progress and read ward updates,
+            in English, हिन्दी or ਪੰਜਾਬੀ.
+          </p>
+          <a
+            class="b"
+            style="background: #c8d9e6; color: #2f4156; border-color: #c8d9e6"
+            href="#"
+            >Register a Complaint</a
+          >
+        </div>
+        <div class="g4">
+          <a class="c" href="#"
+            ><h3>Register a Complaint</h3>
+            <p>Start a new report</p></a
+          ><a class="c" href="#"
+            ><h3>Track My Complaint</h3>
+            <p>See latest status</p></a
+          ><a class="c" href="#"
+            ><h3>View FAQs</h3>
+            <p>Quick answers</p></a
+          ><a class="c" href="#"
+            ><h3>View Announcements</h3>
+            <p>Ward news</p></a
+          >
+        </div>
+        <div class="g4">
+          <div class="c bg">
+            <p>Total Complaints</p>
+            <span class="n">12</span>
+          </div>
+          <div class="c bg">
+            <p>Pending</p>
+            <span class="n">3</span>
+          </div>
+          <div class="c bg">
+            <p>In Progress</p>
+            <span class="n">4</span>
+          </div>
+          <div class="c bg">
+            <p>Resolved</p>
+            <span class="n">5</span>
+          </div>
+        </div>
+        <div class="cols">
+          <div class="c">
+            <h2>Recent complaints</h2>
+            <div class="row">
+              <span><b>SC-2026-00412</b> Streetlight not working</span
+              ><span class="bd prg">In Progress</span>
+            </div>
+            <div class="row">
+              <span><b>SC-2026-00397</b> No water supply, Block C</span
+              ><span class="bd rev">Under Review</span>
+            </div>
+            <div class="row">
+              <span><b>SC-2026-00371</b> Garbage not collected</span
+              ><span class="bd res">Resolved</span>
+            </div>
+          </div>
+          <div class="c">
+            <h2>FAQ shortcuts</h2>
+            <a href="#" style="color: var(--tx)">How do I track my complaint?</a
+            ><a href="#" style="color: var(--tx)">Property tax payment steps</a
+            ><a href="#" style="color: var(--tx)"
+              >Apply for a birth certificate</a
+            >
+            <h2 style="margin-top: 8px">Latest news</h2>
+            <p>Water supply timings change from 10 Nov · Public Works</p>
+          </div>
+        </div>
+      </div>
+      <nav class="bn" aria-label="Mobile">
+        <a href="index.html">Home</a><a href="#">Register</a
+        ><a href="#">Complaints</a><a href="faq.html">FAQ</a><a href="#">News</a
+        ><a href="profile.html">Profile</a>
+      </nav>
+    </div>
+    <script>
+      (function () {
+        var p = document.querySelector(".pg"),
+          k = "sc-theme",
+          s = null;
+        try {
+          s = localStorage.getItem(k);
+        } catch (e) {}
+        if (s) p.classList.toggle("dark", s === "dark");
+        document.querySelectorAll("[data-theme-toggle]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = p.classList.toggle("dark");
+            try {
+              localStorage.setItem(k, d ? "dark" : "light");
+            } catch (e) {}
+          });
+        });
+        document
+          .querySelectorAll('select[aria-label="Language"]')
+          .forEach(function (x) {
+            x.addEventListener("change", function () {
+              document.documentElement.lang = ["en", "hi", "pa"][
+                x.selectedIndex
+              ];
+            });
+          });
+      })();
+    </script>
+  </body>
 </html>
