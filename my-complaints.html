@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartCivic — Complaint View</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap">
+<link rel="stylesheet" href="ui.css">
+<style>body{margin:0}</style>
+</head>
+<body>
+<div class="pg " style="width:100%"><header class="nav"><a class="logo" href="index.html" style="text-decoration:none">SmartCivic</a><nav class="nl" aria-label="Main"><a href="index.html">Home</a><a href="register-complaint.html">Register Complaint</a><a href="my-complaints.html" class="on">My Complaints</a><a href="faq.html">FAQ</a><a href="announcements.html">Announcements</a><a href="profile.html">Profile</a></nav><span class="sp"></span><select class="f" style="width:112px" aria-label="Language"><option>English</option><option>हिन्दी</option><option>ਪੰਜਾਬੀ</option></select><button class="b s" data-theme-toggle>Theme</button><button class="b s">Alerts <span class="bd rev">3</span></button><span class="av" role="img" aria-label="Profile: Gurpreet Singh">GS</span></header><div class="w"><h1>My Complaints</h1><div class="c"><div class="g4"><input class="f" placeholder="Search by ID or title" aria-label="Search"><div><label>Status</label><select class="f"><option>All statuses</option><option>Submitted</option><option>Under Review</option><option>In Progress</option><option>Resolved</option><option>Rejected</option></select></div><div><label>Category</label><select class="f"><option>All categories</option><option>Roads and Infrastructure</option><option>Water Supply</option><option>Electricity</option><option>Sanitation and Waste Management</option><option>Public Safety</option><option>Healthcare</option><option>Education</option><option>Other</option></select></div><div><label>Sort</label><select class="f"><option>Newest first</option><option>Oldest first</option></select></div></div></div><div class="g2"><div class="c"><div class="row"><b>SC-2026-00412</b><span class="bd prg">In Progress</span></div><h3>Streetlight not working</h3><p>Electricity · Submitted 12 Oct 2026 · Updated 2 days ago</p><a class="b s" href="#">View Details</a></div><div class="c"><div class="row"><b>SC-2026-00397</b><span class="bd rev">Under Review</span></div><h3>No water supply, Block C</h3><p>Water Supply · Submitted 12 Oct 2026 · Updated 2 days ago</p><a class="b s" href="#">View Details</a></div><div class="c"><div class="row"><b>SC-2026-00371</b><span class="bd res">Resolved</span></div><h3>Garbage not collected</h3><p>Sanitation and Waste Management · Submitted 28 Sep 2026 · Updated 5 Oct 2026</p><a class="b s" href="#">View Details</a></div><div class="c"><div class="row"><b>SC-2026-00355</b><span class="bd rej">Rejected</span></div><h3>Pothole near school gate</h3><p>Roads and Infrastructure · Submitted 20 Sep 2026 · Updated 24 Sep 2026</p><a class="b s" href="#">View Details</a></div><div class="c"><div class="row"><b>SC-2026-00418</b><span class="bd sub">Submitted</span></div><h3>Broken bench in park</h3><p>Public Safety · Submitted Today · Updated Today</p><a class="b s" href="#">View Details</a></div></div><div class="row" style="justify-content:center"><button class="b s">Previous</button><span>Page 1 of 3</span><button class="b s">Next</button></div></div></div>
+<script>
+(function(){var p=document.querySelector('.pg'),k='sc-theme',s=null;try{s=localStorage.getItem(k)}catch(e){}
+if(s)p.classList.toggle('dark',s==='dark');
+document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.addEventListener('click',function(){var d=p.classList.toggle('dark');try{localStorage.setItem(k,d?'dark':'light')}catch(e){}})});
+document.querySelectorAll('select[aria-label="Language"]').forEach(function(x){x.addEventListener('change',function(){document.documentElement.lang=['en','hi','pa'][x.selectedIndex]})});
+})();
+</script>
+</body>
+</html>
