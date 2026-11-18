@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartCivic — Login</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Gurmukhi:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="ui.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pg" style="width: 100%">
+      <header class="nav">
+        <a class="logo" href="index.html" style="text-decoration: none"
+          >SmartCivic</a
+        >
+        <nav class="nl" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a href="announcements.html">Announcements</a>
+          <a href="login.html" class="on">Login</a>
+        </nav>
+        <span class="sp"></span>
+        <select class="f" style="width: 112px" aria-label="Language">
+          <option>English</option>
+          <option>हिन्दी</option>
+          <option>ਪੰਜਾਬੀ</option>
+        </select>
+        <button class="b s" data-theme-toggle>Theme</button>
+      </header>
+      <div class="w">
+        <div>
+          <h1>Portal Login</h1>
+          <p>Sign in to your citizen account or municipal staff portal.</p>
+        </div>
+        <div class="cols">
+          <div class="c">
+            <div>
+              <label style="margin-bottom: 8px">Select User Type</label>
+              <div class="row" style="gap: 10px; margin-bottom: 10px">
+                <button
+                  type="button"
+                  class="chip on"
+                  id="tab-citizen"
+                  style="
+                    flex: 1;
+                    cursor: pointer;
+                    text-align: center;
+                    font-weight: 700;
+                    min-height: 44px;
+                  "
+                >
+                  Citizen
+                </button>
+                <button
+                  type="button"
+                  class="chip"
+                  id="tab-staff"
+                  style="
+                    flex: 1;
+                    cursor: pointer;
+                    text-align: center;
+                    font-weight: 700;
+                    min-height: 44px;
+                  "
+                >
+                  Staff / Officer
+                </button>
+              </div>
+              <div>
+                <span class="bd prg" id="role-badge">Citizen Portal</span>
+              </div>
+            </div>
+
+            <form
+              id="login-form"
+              onsubmit="event.preventDefault(); window.location.href = document.getElementById('submit-link').getAttribute('href');"
+              style="display: grid; gap: 14px; margin: 0"
+            >
+              <div id="field-identifier">
+                <label id="lbl-identifier" for="login-id"
+                  >Mobile Number or Email Address *</label
+                >
+                <input
+                  id="login-id"
+                  class="f"
+                  type="text"
+                  placeholder="e.g. 9876543210 or citizen@example.com"
+                  value="gurpreet@example.com"
+                  required
+                />
+              </div>
+
+              <div id="field-department" style="display: none">
+                <label id="lbl-dept" for="login-dept">Department *</label>
+                <select id="login-dept" class="f">
+                  <option>Public Works & Roads</option>
+                  <option>Water Supply & Sewerage</option>
+                  <option>Sanitation & Waste Management</option>
+                  <option>Electricity & Street Lighting</option>
+                  <option>Healthcare & Sanitation</option>
+                  <option>Property Tax & Revenue</option>
+                </select>
+              </div>
+
+              <div>
+                <label id="lbl-password" for="login-pass">Password *</label>
+                <input
+                  id="login-pass"
+                  class="f"
+                  type="password"
+                  placeholder="Enter your password"
+                  value="password123"
+                  required
+                />
+              </div>
+
+              <div class="row" style="justify-content: space-between">
+                <label
+                  style="
+                    font-weight: 500;
+                    font-size: 14px;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin: 0;
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" checked /> Remember credentials
+                </label>
+                <a
+                  href="#"
+                  style="
+                    color: var(--tx);
+                    font-size: 13px;
+                    font-weight: 600;
+                    text-decoration: none;
+                  "
+                  >Forgot Password?</a
+                >
+              </div>
+
+              <a
+                id="submit-link"
+                href="index.html"
+                class="b"
+                style="width: 100%; text-align: center; justify-content: center"
+              >
+                Sign In as Citizen
+              </a>
+
+              <button
+                type="button"
+                id="sec-btn"
+                class="b s"
+                style="width: 100%; text-align: center; justify-content: center"
+              >
+                Sign In with OTP (SMS)
+              </button>
+            </form>
+
+            <p
+              id="card-footer-text"
+              style="text-align: center; font-size: 13px; margin-top: 4px"
+            >
+              Don't have an account?
+              <a href="#" style="color: var(--tx); font-weight: 700"
+                >Register as a Citizen</a
+              >
+            </p>
+          </div>
+
+          <div style="display: grid; gap: 16px; align-content: start">
+            <div class="c bg">
+              <h3>Quick Demo Access</h3>
+              <p style="font-size: 13px">
+                Switch between citizen and staff views directly for preview:
+              </p>
+              <div style="display: grid; gap: 10px">
+                <div
+                  style="
+                    padding: 12px;
+                    background: var(--sf);
+                    border-radius: 10px;
+                    border: 1px solid var(--bd);
+                    display: grid;
+                    gap: 6px;
+                  "
+                >
+                  <div class="row" style="justify-content: space-between">
+                    <b>Gurpreet Singh</b>
+                    <span class="bd prg">Citizen</span>
+                  </div>
+                  <p style="font-size: 12px">Model Town Ward · Resident</p>
+                  <a
+                    href="index.html"
+                    class="b s"
+                    style="
+                      min-height: 36px;
+                      padding: 0 12px;
+                      font-size: 13px;
+                      width: 100%;
+                      justify-content: center;
+                    "
+                  >
+                    Enter Citizen Portal
+                  </a>
+                </div>
+                <div
+                  style="
+                    padding: 12px;
+                    background: var(--sf);
+                    border-radius: 10px;
+                    border: 1px solid var(--bd);
+                    display: grid;
+                    gap: 6px;
+                  "
+                >
+                  <div class="row" style="justify-content: space-between">
+                    <b>Ravinder Kaur</b>
+                    <span class="bd rev">Staff Officer</span>
+                  </div>
+                  <p style="font-size: 12px">Public Works · Ward Officer</p>
+                  <a
+                    href="staff-dashboard.html"
+                    class="b s"
+                    style="
+                      min-height: 36px;
+                      padding: 0 12px;
+                      font-size: 13px;
+                      width: 100%;
+                      justify-content: center;
+                    "
+                  >
+                    Enter Staff Dashboard
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="c">
+              <h3>Help & Support</h3>
+              <p style="font-size: 13px">
+                Need assistance accessing your account?
+              </p>
+              <div
+                style="
+                  display: grid;
+                  gap: 6px;
+                  font-size: 13px;
+                  color: var(--tx);
+                "
+              >
+                <div><b>Civic Helpline:</b> 1800-180-2121 (Toll-Free)</div>
+                <div><b>Staff IT Desk:</b> Ext. 402 (Ward Office)</div>
+                <div><b>Working Hours:</b> Mon–Sat, 9:00 AM – 5:00 PM</div>
+              </div>
+              <a
+                href="faq.html"
+                style="
+                  color: var(--tx);
+                  font-weight: 600;
+                  font-size: 13px;
+                  text-decoration: none;
+                "
+                >View Frequently Asked Questions &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="bn" aria-label="Mobile">
+        <a href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
+        <a href="announcements.html">News</a>
+        <a href="login.html" class="on">Login</a>
+      </nav>
+    </div>
+    <script>
+      (function () {
+        var p = document.querySelector(".pg"),
+          k = "sc-theme",
+          s = null;
+        try {
+          s = localStorage.getItem(k);
+        } catch (e) {}
+        if (s) p.classList.toggle("dark", s === "dark");
+        document.querySelectorAll("[data-theme-toggle]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = p.classList.toggle("dark");
+            try {
+              localStorage.setItem(k, d ? "dark" : "light");
+            } catch (e) {}
+          });
+        });
+        document
+          .querySelectorAll('select[aria-label="Language"]')
+          .forEach(function (x) {
+            x.addEventListener("change", function () {
+              document.documentElement.lang = ["en", "hi", "pa"][
+                x.selectedIndex
+              ];
+            });
+          });
+
+        var tabCitizen = document.getElementById("tab-citizen");
+        var tabStaff = document.getElementById("tab-staff");
+        var roleBadge = document.getElementById("role-badge");
+        var deptField = document.getElementById("field-department");
+        var lblId = document.getElementById("lbl-identifier");
+        var inputId = document.getElementById("login-id");
+        var lblPass = document.getElementById("lbl-password");
+        var submitLink = document.getElementById("submit-link");
+        var secBtn = document.getElementById("sec-btn");
+        var footerText = document.getElementById("card-footer-text");
+
+        function setRole(role) {
+          if (role === "staff") {
+            tabStaff.classList.add("on");
+            tabCitizen.classList.remove("on");
+            roleBadge.className = "bd rev";
+            roleBadge.textContent = "Ward Officer & Staff Portal";
+            deptField.style.display = "block";
+            lblId.textContent = "Staff ID or Official Email *";
+            inputId.placeholder =
+              "e.g. STF-2026-089 or r.kaur@smartcivic.gov.in";
+            inputId.value = "r.kaur@smartcivic.gov.in";
+            lblPass.textContent = "Official Password or Security PIN *";
+            submitLink.textContent = "Sign In to Staff Dashboard";
+            submitLink.href = "staff-dashboard.html";
+            secBtn.textContent = "Sign In with Govt SSO / Digital ID";
+            footerText.innerHTML =
+              'Official staff access only. Need access? <a href="#" style="color: var(--tx); font-weight: 700;">Contact Ward Administrator</a>';
+          } else {
+            tabCitizen.classList.add("on");
+            tabStaff.classList.remove("on");
+            roleBadge.className = "bd prg";
+            roleBadge.textContent = "Citizen Portal";
+            deptField.style.display = "none";
+            lblId.textContent = "Mobile Number or Email Address *";
+            inputId.placeholder = "e.g. 9876543210 or citizen@example.com";
+            inputId.value = "gurpreet@example.com";
+            lblPass.textContent = "Password *";
+            submitLink.textContent = "Sign In as Citizen";
+            submitLink.href = "index.html";
+            secBtn.textContent = "Sign In with OTP (SMS)";
+            footerText.innerHTML =
+              'Don\'t have an account? <a href="#" style="color: var(--tx); font-weight: 700;">Register as a Citizen</a>';
+          }
+        }
+
+        if (tabCitizen && tabStaff) {
+          tabCitizen.addEventListener("click", function () {
+            setRole("citizen");
+          });
+          tabStaff.addEventListener("click", function () {
+            setRole("staff");
+          });
+        }
+
+        if (
+          location.search.indexOf("role=staff") >= 0 ||
+          location.hash === "#staff"
+        ) {
+          setRole("staff");
+        }
+      })();
+    </script>
+  </body>
+</html>
